@@ -68,7 +68,7 @@ object SearchRepositoryProvider {
     }
 }
 ```
-## Date Classes
+## Data Classes
 ### User on GitHub
 ```kotlin
 
