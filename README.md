@@ -1,6 +1,21 @@
 # Kotlin-Retrofit
 Small example project to demonstrating how to use Retrofit for Android in Kotlin
 
+### Example of Service being used
+```kotlin
+val service = GithubApiService.Factory.create()
+
+button.setOnClickListener {
+    service.search("julp04")
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribeOn(Schedulers.io())
+            .subscribe ({ result ->
+                Log.d("Result", "There are ${result.items.size} Java developers in Lagos")
+            }, {
+                error -> error.printStackTrace()
+            })
+}
+```
 
 ### Github Service
 ```kotlin
