@@ -1,5 +1,5 @@
 # Kotlin-Retrofit
-Small example project to demonstrating how to use Retrofit for Android in Kotlin
+Small example project demonstrating how to use Retrofit for Android in Kotlin
 
 ### Example of Service being used
 ```kotlin
@@ -68,8 +68,8 @@ object SearchRepositoryProvider {
     }
 }
 ```
-
-### Data Class For User on GitHub
+## Date Classes
+### User on GitHub
 ```kotlin
 
 data class User(
@@ -85,7 +85,7 @@ data class User(
         val score: Double
 )
 ```
-### Data Class for Result that comes back from API in JSON
+### The Result that comes back from API in JSON
 ```kotlin
 /**
  * These represent the parameters of the json that comes back
